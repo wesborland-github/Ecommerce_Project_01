@@ -1,5 +1,25 @@
 # EcommerceMjg
 
+---
+
+## Project of ecommerce with:
+
+* Api of www.fakestoreapi.com implemented to simulate an ecommerce with real products.
+* Cards for show all products called in ecommerce area.
+* Show only important things in the card ( image, title, description and price ) and hidden others (category, rating).
+* Search bar with pipes created for search in ecommerce area an specific product.
+* Implemented category to filter products (all, free and pay filters).
+* Added component for empty cart.
+* Added icon for cart with a number that change dynamically when a product is added.
+* Added a component for checkout.
+* Added function for calculate total cost in checkout area.
+* Added function and button "delete" in the checkout area to all products individually.
+* Added function and button "delete" in the checkout area for erase all products.
+* Added function and button for "continue shopping" in the checkout area.
+
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
 ## Development server

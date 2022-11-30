@@ -1,0 +1,45 @@
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item">
+      <a (click)="filter('')">
+        <img
+          src="../../../assets/votacion_tipo_todas.png"
+          alt="votacion_todas"
+        />
+        <h6>Todas</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('electronics')">
+        <img
+          src="../../../assets/votacion_tipo_gratis.png"
+          alt="votacion_gratis"
+        />
+        <h6>Gratis</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('pago')">
+        <img src="../../../assets/votacion_tipo_paga.png" alt="votacion_paga" />
+        <h6>Pago</h6>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <ng-container
+      *ngFor="let item of filterCategory | filter: searchKey:'title'"
+    >
+      <div class="card col-md-3">
+        <img src="{{ item.image }}" alt="imagen_producto" />
+        <h5 class="itemTitle">{{ item.title }}</h5>
+        <p class="itemDescription">{{ item.description }}</p>
+        <p><strong>Precio:</strong> ${{ item.price }}</p>
+        <button class="btn btn-primary" (click)="addtoCart(item)">
+          Agregar al carrito
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
